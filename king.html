@@ -1,0 +1,922 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="shortcut icon"
+      href="Cerifi-Logo-Final.svg" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="myscript.js" defer></script>
+    <title>Cerifi CPEdge</title>
+  </head>
+  <body>
+    <section>
+      <!-- Header -->
+      <div class="header">
+        <div class="header-content">
+          <h1 class="site-title">CeriFi CPEdge</h1>
+          <div class="speech-input">
+            <input
+              type="text"
+              id="myspeech"
+              placeholder="Enter text to speak"
+              autofocus />
+            <button id="listenbutton" class="btn btn-primary">Listen</button>
+          </div>
+        </div>
+        <div class="layout-wrapper">
+          <!-- Main Navigation -->
+          <nav class="navbar">
+            <a
+              href="#"
+              onclick="
+              p8function();
+              return false;
+            "
+              id="a1"
+              class="nav-link active">Home</a>
+            <a
+              href="#"
+              onclick="
+              p4function();
+              return false;
+            "
+              class="nav-link">Raptivity Tag</a>
+            <a
+              href="#"
+              onclick="
+              p3function();
+              return false;
+            "
+              class="nav-link">Image Tag</a>
+            <a
+              href="#"
+              onclick="
+              p6function();
+              return false;
+            "
+              class="nav-link">Audio Tag</a>
+            <a
+              href="#"
+              onclick="
+              p7function();
+              return false;
+            "
+              class="nav-link">Video Tag</a>
+            <a
+              href="#"
+              onclick="
+              p1function();
+              return false;
+            "
+              class="nav-link">Instruction</a>
+            <a
+              href="#"
+              onclick="
+              p18function();
+              return false;
+            "
+              class="nav-link">Ul Icons</a>
+            <a
+              href="#"
+              onclick="
+              p5function();
+              return false;
+            "
+              id="a5"
+              class="nav-link">Commands</a>
+            <a
+              href="#"
+              onclick="
+              p9function();
+              return false;
+            "
+              id="a6"
+              class="nav-link">Entities</a>
+            <a
+              href="#"
+              onclick="
+              p16function();
+              return false;
+            "
+              id="a13"
+              class="nav-link">Macros</a>
+            <a href="#" onclick="p17function(); return false;"
+              class="nav-link">Panel</a>
+          </nav>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section>
+      <!-- Main Content Area -->
+      <div class="main-content">
+        <section>
+          <!-- Home/Links Section -->
+          <div id="elinks" class="content-section active">
+            <div class="content-wrapper">
+              <div class="content-wrapper-card">
+                <div class="links-grid">
+
+                  <a href="https://app.smartsheet.com/b/home" target="_blank"
+                    class="nav-card premium-card">
+                    <div class="image-placeholder1">
+                      <span class="smartsheet-text">Smartsheet</span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://checkpointlearning.thomsonreuters.com/internal"
+                    target="_blank" class="nav-card premium-card">
+                    <div class="image-placeholder2">
+                      <span class="metadata-text">Meta Data</span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://checkpointlearning.thomsonreuters.com/internal"
+                    target="_blank" class="nav-card premium-card">
+
+                    <div class="image-placeholder3">
+
+                      <span class="cpe-text">
+                        CPE Online
+                      </span>
+
+                    </div>
+
+                  </a>
+                  <a
+                    href="https://stock.adobe.com/in?msockid=2c823d66493762ae32442b97484863e3"
+                    target="_blank" class="nav-card premium-card">
+                    <div class="image-placeholder4">
+                      <span class="adobe-text">Adobe
+                        Stock</span>
+                    </div>
+                  </a>
+                  <a href="https://www.editpad.org/tool/diff-checker"
+                    target="_blank" class="nav-card premium-card">
+                    <div class="image-placeholder5">
+                      <span class="diff-text">Diff
+                        Checker</span>
+                    </div>
+                  </a>
+                  <a
+                    href="https://apps.irs.gov/app/picklist/list/formsPublications.html"
+                    target="_blank" class="nav-card premium-card">
+                    <div class="image-placeholder6">
+                      <span class="irs-text"> IRS Forms</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="mychecklist">
+                <ul class="checklist copy-list">
+
+                  <!-- Spacing -->
+                  <li data-copy="- ">Hyphen space</li>
+
+                  <li data-copy=" . ">Space.space</li>
+                  <li data-copy=" .">.space</li>
+                  <li data-copy=". ">space.</li>
+                  <li data-copy="..">..</li>
+
+                  <li data-copy=" , ">Space,space</li>
+                  <li data-copy=", "> ,space</li>
+                  <li data-copy=" ,">space,</li>
+                  <li data-copy=",,">,,</li>
+
+                  <li data-copy=" ; ">Space;space</li>
+                  <li data-copy="; ">;space</li>
+                  <li data-copy=" ;">space;</li>
+                  <li data-copy=";;">;;</li>
+
+                  <li data-copy=" : ">Space:Space</li>
+                  <li data-copy=": ">:Space</li>
+                  <li data-copy=" :">space:</li>
+                  <li data-copy="::">::</li>
+
+                  <!-- Brackets -->
+                  <li data-copy="[ ">[Space</li>
+                  <li data-copy=" ]">Space]</li>
+                  <li data-copy="[term">[term</li>
+
+                  <li data-copy="(">(Space</li>
+                  <li data-copy=" )">Space)</li>
+
+                  <li data-copy="{ ">{Space</li>
+                  <li data-copy=" }">Space}</li>
+
+                  <!-- Quotes -->
+                  <li data-copy="&quot;">"</li>
+                  <li data-copy="'">'</li>
+
+                  <!-- Special characters -->
+                  <li data-copy="&amp;">&amp;</li>
+                  <li data-copy="&lt;">&lt;</li>
+                  <li data-copy="&gt;">&gt;</li>
+                  <li data-copy="&nbsp;">&amp;nbsp;</li>
+
+                  <!-- Dot / patterns -->
+                  <li data-copy="...">Ellipsis (...)</li>
+                  <li
+                    data-copy="..........(&quot;&quot;)">ZZZ..........("")</li>
+                  <li data-copy="(.?)">(.?)</li>
+
+                  <!-- Symbols -->
+                  <li data-copy="+">Plus (+)</li>
+                  <li data-copy="-">Minus (-)</li>
+                  <li data-copy="=">Equal (=)</li>
+                  <li data-copy="×">Multiply (×)</li>
+                  <li data-copy="÷">Divide (÷)</li>
+                  <li data-copy="±">Plus-minus (±)</li>
+
+                  <!-- Dashes -->
+                  <li data-copy="–">En dash (–)</li>
+                  <li data-copy="—">Em dash (—)</li>
+
+                  <!-- Entity codes -->
+                  <li data-copy="&amp;ndash;">&amp;ndash;</li>
+                  <li data-copy="&amp;mdash;">&amp;mdash;</li>
+                  <li data-copy="&amp;lsquo;">&amp;lsquo;</li>
+                  <li data-copy="&amp;rsquo;">&amp;rsquo;</li>
+                  <li data-copy="&amp;ldquo;">&amp;ldquo;</li>
+                  <li data-copy="&amp;rdquo;">&amp;rdquo;</li>
+
+                  <!-- HTML -->
+                  <li data-copy="<br>">&lt;br&gt;</li>
+
+                  <!-- Space -->
+                  <li data-copy="  ">Double space</li>
+
+                  <!-- URLs -->
+                  <li data-copy="www.">www.</li>
+                  <li data-copy="http://">http://</li>
+                  <li data-copy="https://">https://</li>
+
+                  <!-- Superscript -->
+                  <li data-copy="1ˢᵗ 2ⁿᵈ 3ʳᵈ 4ᵗʰ 5ᵗʰ 6ᵗʰ 7ᵗʰ 8ᵗʰ 9ᵗʰ">
+                    1st, 2nd, 3rd, 4th, 5th, 6th, 7th, 8th, 9th → superscript
+                  </li>
+
+                </ul>
+              </div>
+              <div class="mychecklist">
+                <ul class="checklist">
+
+                  <ul>
+
+                    <li>Run ncdata and nscreens commands</li>
+
+                    <li>Tagging update</li>
+                    <li>Raptivity Tagging</li>
+                    <li>Suppl</li>
+                    <li>urls (www. and http://)</li>
+                    <li>space check " ," " ." "  "</li>
+                    <li>&lt;b&gt; in q-statement to &lt;bi&gt;</li>
+                    <li>&lt;ednotes&gt;</li>
+                    <li>&lt;tables&gt; - check the table spaces clearly with the
+                      original document</li>
+                    <li>1st, 2nd, 3rd..... to superscript</li>
+                    <li>entities</li>
+                    <li>Terms (search with "[term")</li>
+                    <li>&lt;/bi&gt;&lt;/para&gt; to &lt;/bi&gt;
+                      &amp;nbsp;&lt;/para&gt;</li>
+                    <li>&lt;/b&gt;&lt;/para&gt; to &lt;/b&gt;
+                      &amp;nbsp;&lt;/para&gt;</li>
+                    <li>&amp;lsquo; to &amp;apos;</li>
+                    <li>&amp;rsquo; to &amp;apos;</li>
+                    <li>Make changes to the raptivity elements from (word and
+                      check all in u-drive also)</li>
+                    <li>Clear SCOT</li>
+                    <li>Run mn5 and check the panalization and if need add new
+                      images - Also check the italics and bold styles with the
+                      original document clearly</li>
+                    <li>If time Create new elements (Should not contains more
+                      than one element for 10 screens)</li>
+                    <li>Check for Title image in metadata.</li>
+                    <li>Check to delete supplement instruciton</li>
+                    <li>Network course files take from ux2w not the
+                      previous</li>
+
+                  </ul>
+
+                  <h3>Checklist:</h3>
+
+                  <ul>
+
+                    <li>Hyphen space</li>
+                    <li>ZZZ..........("")</li>
+                    <li>Space.space</li>
+                    <li>.space. (space.)</li>
+                    <li>..</li>
+                    <li>,,</li>
+                    <li>Space,space</li>
+                    <li>,space, (space,)</li>
+                    <li>;;</li>
+                    <li>Space;space</li>
+                    <li>;space; (space;)</li>
+                    <li>::</li>
+                    <li>Space:Space</li>
+                    <li>:Space: (space:)</li>
+                    <li>[Space -------- also (&lt;, (, {)</li>
+                    <li>Space] -------- also (&gt;, ), })</li>
+                    <li>[term</li>
+                    <li>&amp;</li>
+                    <li>]./, (no space)</li>
+                    <li>] if content (Space)</li>
+                    <li>check for (0-9) numbers st, nd, rd, th for superscript
+                      (1th, 2th, 3th)</li>
+                    <li>Space?</li>
+                    <li>"Space</li>
+                    <li>Space"</li>
+                    <li>check for periods in Heads</li>
+                    <li>check for Transcripts &lt;br&gt; tags</li>
+                    <li>Supplements order, title nd phrase in the course, length
+                      and naming convention.</li>
+                    <li>Delete old supplement reference line (available
+                      as........)</li>
+                    <li>www/http</li>
+                    <li>entities (+, =, ndash with minus, X, ...)</li>
+                    <li>Check Reg, Irs, Rev, Irc with (, [ and make it as
+                      Authority.</li>
+                    <li>Check for &lt;blank&gt; space&lt;blank&gt;space</li>
+                    <li>images naming convention and Duplication.</li>
+                    <li>Footnotes always in Authorities.</li>
+                    <li>Check for course credits and no.of test questions.</li>
+                    <li>Check for bold in questions and make it as bold italic
+                      not just negative sentences.</li>
+                    <li>Check for LP pannels for raptivity screens.</li>
+                    <li>latest instruction tagging and also image.</li>
+                    <li>Negative sentences in Q-statements.</li>
+                    <li>No Periods in Glossary headings.</li>
+                    <li>Check for (.?)</li>
+                    <li>Search for q-statements.</li>
+                    <li>title image on mn8</li>
+                    <li>"Source:" for authority</li>
+                    <li>Search ":" for list 2</li>
+                    <li>Check prelim file for &amp;nbsp</li>
+                    <li>Check release in meta, it must be CeriFi</li>
+                    <li>Check CFP line for CFP courses.</li>
+
+                  </ul>
+
+                </ul></div>
+            </div></div>
+        </section>
+
+        <section>
+          <!-- Raptivity Tagging Section -->
+          <div id="raptag" class="content-section">
+            <div class="form-group">
+              <label>Enter The Element Name:</label>
+              <div class="tag-row">
+                <input type="text" placeholder="Element Name" id="elename"
+                  class="form-input" autofocus>
+                <button onclick="replaceEleTag()"
+                  class="btn btn-primary">Get
+                  tagging</button>
+              </div>
+            </div>
+            <p id="eletag"></p>
+          </div>
+        </section>
+
+        <section>
+          <!-- Image Tagging Section -->
+          <div id="imagetag" class="content-section">
+            <div class="form-group">
+              <label>Enter Image Name:</label>
+              <div style="display: flex; gap: 10px;">
+                <input type="text" placeholder="Enter Image Name" id="imgname"
+                  class="form-input" autofocus>
+                <select id="imgtype" class="form-input">
+                  <option value="jpg" selected>jpg</option>
+                  <option value="gif">gif</option>
+                  <option value="png">png</option>
+                </select>
+              </div>
+            </div>
+            <p id="imgtag"></p>
+            <div class="button-group">
+              <button onclick="replaceImageRight()"
+                class="btn btn-primary" style="height: 40px;">Image
+                Right Align</button>
+              <button onclick="replaceImageCenter()"
+                class="btn btn-primary">Image
+                Center Align</button>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!-- Audio Tagging Section -->
+          <div id="audiobuttag" class="content-section">
+            <div class="form-group">
+              <label>Enter The Image Name:</label>
+              <input type="text" placeholder="Image Name" id="audname"
+                class="form-input" autofocus>
+              <label>Enter The Audio Name:</label>
+              <input type="text" placeholder="Audio Name" id="audfname"
+                class="form-input">
+            </div>
+            <p id="audtag"></p>
+            <button style="height: 40px;" onclick="replaceAudTag()"
+              class="btn btn-primary">Get
+              Tagging</button>
+          </div>
+        </section>
+
+        <section>
+          <!-- Video Tagging Section -->
+          <div id="videotag" class="content-section">
+            <div class="form-group">
+              <label>Enter The Image Name:</label>
+              <input type="text" placeholder="Image Name" id="vimgname"
+                class="form-input" autofocus>
+              <label>Enter The Video Name:</label>
+              <input type="text" placeholder="Video Name" id="vidname"
+                class="form-input">
+            </div>
+            <p id="vidtag"></p>
+            <button style="height: 40px;" onclick="replaceVidTag()"
+              class="btn btn-primary">Get
+              Tagging</button>
+          </div>
+        </section>
+
+        <section>
+          <!-- Instruction Section -->
+          <div id="instruction" class="content-section">
+            <div class="form-group">
+              <label>Select The Level Of Course:</label>
+              <select id="level-select" class="form-input"
+                onchange="handleSelectChange(event)">
+                <option value>Select</option>
+                <option value="level2">Level 2</option>
+                <option value="level4">Level 4</option>
+              </select>
+            </div>
+
+            <div id="l2" class="level-content">
+              <h3>Level 2</h3>
+              <div
+                style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-left: 4px solid var(--primary-color); word-wrap: break-word; white-space: normal; overflow-x: auto; font-family: 'Courier New', monospace; line-height: 1.6;">
+                <div id="level2">&lt;para&gt;&lt;instruction&gt;This course
+                  includes
+                  text, exercises, study questions, and a final exam. The
+                  following
+                  are examples of images that will display more information when
+                  selected.&lt;/instruction&gt;&lt;/para&gt;</div>
+              </div>
+            </div>
+            <div id="l4" class="level-content">
+              <h3>Level 4</h3>
+              <div
+                style="background: var(--bg-light); padding: 15px; border-radius: 8px; border-left: 4px solid var(--accent-color); word-wrap: break-word; white-space: normal; overflow-x: auto; font-family: 'Courier New', monospace; line-height: 1.6;">
+                <div id="level4">&lt;para&gt;&lt;instruction&gt;This course
+                  includes
+                  text, exercises, study questions, and a final exam. If the
+                  course
+                  has video, a low bandwidth option is available which plays
+                  audio
+                  accompanied by a static
+                  image.&lt;/instruction&gt;&lt;/para&gt;</div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <section>
+          <!-- Ui Icons Section -->
+          <div class="content-section" id="icons">
+            <div class="grid">
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i
+                      class="fa-solid fa-arrow-right"></i></div>
+                  <span>tr-arrow</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-arrow')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-lock"></i></div>
+                  <span>tr-padlock</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-padlock')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i
+                      class="fa-solid fa-magnifying-glass"></i></div>
+                  <span>tr-search</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-search')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-handshake"></i></div>
+                  <span>tr-handshake</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-handshake')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-user"></i></div>
+                  <span>tr-person</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-person')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-thumbtack"></i></div>
+                  <span>tr-thumbtack</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-thumbtack')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-lightbulb"></i></div>
+                  <span>tr-idea</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-idea')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i
+                      class="fa-solid fa-circle-question"></i></div>
+                  <span>tr-question</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-question')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-clock"></i></div>
+                  <span>tr-time</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-time')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-gavel"></i></div>
+                  <span>tr-legal</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-legal')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-bookmark"></i></div>
+                  <span>tr-remember</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-remember')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i
+                      class="fa-solid fa-triangle-exclamation"></i></div>
+                  <span>tr-warning</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-warning')">Copy</button>
+              </div>
+
+              <div class="card">
+                <div class="left">
+                  <div class="icon"><i class="fa-solid fa-money-bill"></i></div>
+                  <span>tr-money</span>
+                </div>
+                <button class="copy-btn"
+                  onclick="copyText('tr-money')">Copy</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <!-- SCOT Section -->
+          <div id="scot" class="content-section">
+            <div
+              style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap;">
+              <div class="form-group">
+                <div class="input-row">
+                  <input type="text"
+                    placeholder="Enter Course Acronym"
+                    id="acc" class="form-input" autofocus>
+                  <button class="btn btn-primary"
+                    onclick="replaceScotTag()">Get Scot</button>
+                </div>
+
+              </div>
+              <div class="form-group">
+                <div class="input-row">
+                  <input type="text" placeholder="Enter Screen ID"
+                    id="preview"
+                    class="form-input">
+                  <button onclick="fpreview()" class="btn btn-primary">Preview
+                    Screen</button>
+                </div>
+              </div>
+              <div class="form-group">
+
+                <div class="input-row"> <input type="text"
+                    placeholder="Enter Course Acronym"
+                    id="courseInput"
+                    class="form-input">
+
+                  <button onclick="generateCommands()" class="btn btn-primary">
+                    Author Packet
+                  </button>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-row">
+                  <input type="text"
+                    id="termInput"
+                    placeholder="Enter Term ID"
+                    class="form-input">
+
+                  <button onclick="getCommand()" class="btn btn-primary">
+                    Term ID
+                  </button>
+                </div>
+              </div>
+
+            </div>
+            <p id="termOutput"></p>
+            <p id="previewtag"></p>
+            <p id="scottag"></p>
+            <p id="output"></p>
+
+            <div class="button-grid">
+              <button onclick="runCommand('uget')">uget</button>
+              <button onclick="runCommand('ncdata')">ncdata</button>
+              <button onclick="runCommand('nscreens')">nscreens</button>
+              <button onclick="runCommand('npanels -a')">npanels -a</button>
+              <button onclick="runCommand('ncatnums')">ncatnums</button>
+              <button onclick="runCommand('e')">edit course</button>
+              <button onclick="runCommand('edit -m')">edit meta</button>
+              <button onclick="runCommand('mn8 -r')">mn8 -r</button>
+              <button onclick="ux2w()">ux2w</button>
+              <button onclick="runCommand('uget -a')">uget -a</button>
+              <button onclick="runCommand('uget -na')">uget -na</button>
+              <button onclick="runCommand('nels -t')">nels -t</button>
+              <button onclick="runCommand('urtrvmeta')">urtrv meta</button>
+              <button onclick="runCommand('try')">try</button>
+            </div>
+
+            <h3 style="font-size: 14px; margin-bottom: 15px;">Common SCOT
+              Commands</h3>
+            <div class="button-grid">
+              <button onclick="runCommand('mprf')">mprf</button>
+              <button onclick="runCommand('qedit -n')">qedit -n</button>
+              <button onclick="runCommand('qedit -g')">qedit -g</button>
+              <button onclick="runCommand('wqsr2')">wqsr2</button>
+              <button onclick="runCommand('qedit -m')">qedit -m</button>
+              <button onclick="runCommand('mtermlist')">mtermlist</button>
+              <button onclick="runCommand('qtermtitles')">qtermtitles</button>
+              <button onclick="runCommand('qpicfiles')">qpicfiles</button>
+              <button onclick="runCommand('ux2wm')">ux2wm</button>
+              <button onclick="runCommand('qedit')">qedit</button>
+              <button onclick="runCommand('qterms')">qterms</button>
+              <button onclick="runCommand('qquest')">qquest</button>
+              <button onclick="runCommand('qcom')">qcom</button>
+              <button onclick="runCommand('ux2w -g')">ux2w -g</button>
+            </div>
+
+          </div>
+
+        </section>
+
+        <section>
+          <div id="entities" class="content-section">
+
+            <div class="entities-grid">
+
+              <div class="entity-card" onclick="copyText('&equals;')">
+                <div class="entity-symbol">&equals;</div>
+                <div class="entity-name">&amp;equals;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&plus;')">
+                <div class="entity-symbol">&plus;</div>
+                <div class="entity-name">&amp;plus;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&hellip;')">
+                <div class="entity-symbol">&hellip;</div>
+                <div class="entity-name">&amp;hellip;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&ldquo;')">
+                <div class="entity-symbol">&ldquo;</div>
+                <div class="entity-name">&amp;ldquo;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&rdquo;')">
+                <div class="entity-symbol">&rdquo;</div>
+                <div class="entity-name">&amp;rdquo;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&lsquo;')">
+                <div class="entity-symbol">&lsquo;</div>
+                <div class="entity-name">&amp;lsquo;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&rsquo;')">
+                <div class="entity-symbol">&rsquo;</div>
+                <div class="entity-name">&amp;rsquo;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&apos;')">
+                <div class="entity-symbol">&apos;</div>
+                <div class="entity-name">&amp;apos;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&minus;')">
+                <div class="entity-symbol">&minus;</div>
+                <div class="entity-name">&amp;minus;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&times;')">
+                <div class="entity-symbol">&times;</div>
+                <div class="entity-name">&amp;times;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&mdash;')">
+                <div class="entity-symbol">&mdash;</div>
+                <div class="entity-name">&amp;mdash;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&ndash;')">
+                <div class="entity-symbol">&ndash;</div>
+                <div class="entity-name">&amp;ndash;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&frac12;')">
+                <div class="entity-symbol">&frac12;</div>
+                <div class="entity-name">&amp;frac12;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&frac14;')">
+                <div class="entity-symbol">&frac14;</div>
+                <div class="entity-name">&amp;frac14;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&sect;')">
+                <div class="entity-symbol">&sect;</div>
+                <div class="entity-name">&amp;sect;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&le;')">
+                <div class="entity-symbol">&le;</div>
+                <div class="entity-name">&amp;le;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&ge;')">
+                <div class="entity-symbol">&ge;</div>
+                <div class="entity-name">&amp;ge;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&para;')">
+                <div class="entity-symbol">&para;</div>
+                <div class="entity-name">&amp;para;</div>
+              </div>
+
+              <div class="entity-card" onclick="copyText('&cent;')">
+                <div class="entity-symbol">&cent;</div>
+                <div class="entity-name">&amp;cent;</div>
+              </div>
+
+            </div>
+
+            <br>
+
+            <!-- Underline section -->
+            <div class="entities-grid">
+
+              <div class="entity-card" onclick="singleunderline()">
+                <div>Single underline</div>
+              </div>
+
+              <div class="entity-card" onclick="doubleunderline()">
+                <div>Double underline</div>
+              </div>
+
+            </div>
+
+          </div>
+        </section>
+
+        <section>
+          <!-- Macros Section -->
+          <div id="macros" class="content-section">
+            <div class="macros-row">
+              <div>
+                <p class="instruction-text"><strong>MS DOC</strong></p>
+
+                <div class="macros-grid">
+                  <div class="macro-card" onclick="copyMacroXmltoDoc()">
+                    <h3>XML to DOCX</h3>
+                  </div>
+                  <div class="macro-card" onclick="HighlightingFormats()">
+                    <h3>Highlighting Formats</h3>
+                  </div>
+                  <div class="macro-card" onclick="DetectHyperlinks()">
+                    <h3>Hyperlinks Detection</h3>
+                  </div>
+                  <div class="macro-card" onclick="DetectNegativewordsinSQTQ()">
+                    <h3>Negative Words Detection</h3>
+                  </div>
+                  <div class="macro-card" onclick="NotApprovedStyles()">
+                    <h3>MS Default Styles Find</h3>
+                  </div>
+                </div>
+
+              </div>
+              <div>
+                <p class="instruction-text"><strong>CMD Powershell</strong></p>
+
+                <div class="macros-grid">
+                  <div class="macro-card" onclick="CreateTerm()">
+                    <h3>Create Term Entity Files</h3>
+                  </div>
+                </div></div>
+            </div></div>
+          <div>
+
+          </div>
+        </section>
+
+        <section>
+          <div id="panel" class="content-section">
+            <table>
+              <tr>
+                <th>S.No</th>
+                <th>Activity</th>
+                <th>Panel</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>Articulate</td>
+                <td>LP</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>Video</td>
+                <td>LP</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>Audio</td>
+                <td>LP</td>
+              </tr>
+              <tr class="highlight">
+                <td>3</td>
+                <td>Video & Head</td>
+                <td>APW</td>
+              </tr>
+              <tr class="highlight">
+                <td>6</td>
+                <td>Audio & Head</td>
+                <td>APW</td>
+              </tr>
+            </table>
+          </div>
+        </section>
+
+        <section>
+          <!-- Snackbar Notification -->
+          <div id="snackbar" class="snackbar">Text copied</div>
+
+        </section>
+
+      </section>
+
+    </body>
+  </html>
